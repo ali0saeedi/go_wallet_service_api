@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `wallet_servic`;
+CREATE DATABASE  IF NOT EXISTS `wallet_service`;
 USE `wallet_service`;
 
 DROP TABLE IF EXISTS `wallets`;

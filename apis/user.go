@@ -1,7 +1,7 @@
 package apis
 
 import (
-	model "github.com/ali0saeedi/go_wallet_service_api/app/models"
+	model "github.com/ali0saeedi/go_wallet_service_api/models"
 	"net/http"
 	"strconv"
 
