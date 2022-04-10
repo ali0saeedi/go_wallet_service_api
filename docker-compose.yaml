@@ -7,6 +7,11 @@ services:
     container_name: wallet_service_api
     ports:
       - 8000:8000
+    environment:
+      - MYSQL_DATABASE=wallet_service
+      - MYSQL_HOST=wallet_service_mysql  #add to!!
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
     depends_on:
       mysql:
         condition: service_healthy
@@ -22,8 +27,9 @@ services:
     environment:
       - MYSQL_DATABASE=wallet_service
       - MYSQL_USER=root
-      - MYSQL_PASSWORD=
-      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_PASSWORD=root
+      - MYSQL_HOST=wallet_service_mysql
+      - MYSQL_ROOT_PASSWORD=root
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       timeout: 5s
