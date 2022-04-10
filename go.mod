@@ -1,4 +1,4 @@
-module app
+module github.com/ali0saeedi/go_wallet_service_api/app
 
 go 1.18
 

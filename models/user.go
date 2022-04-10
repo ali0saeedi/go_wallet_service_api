@@ -1,7 +1,7 @@
 package models
 
 import (
-	orm "app/database"
+	orm "github.com/ali0saeedi/go_wallet_service_api/app/database"
 )
 
 type Wallet struct {

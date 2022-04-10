@@ -1,7 +1,7 @@
 package router
 
 import (
-	. "app/apis"
+	. "github.com/ali0saeedi/go_wallet_service_api/app/apis"
 
 	"github.com/gin-gonic/gin"
 )

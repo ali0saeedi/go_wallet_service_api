@@ -1,9 +1,9 @@
 package main
 
 import (
-	_ "app/database"
-	orm "app/database"
-	"app/router"
+	_ "github.com/ali0saeedi/go_wallet_service_api/app/database"
+	orm "github.com/ali0saeedi/go_wallet_service_api/app/database"
+	"github.com/ali0saeedi/go_wallet_service_api/app/router"
 )
 
 func main() {
